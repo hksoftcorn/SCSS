@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AEHA,KFGK,CEHK;EACR,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,eAAe;EACvB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,mBAAmB;CACjD;;AFDD,AAAA,KAAK,CAAC;ECDJ,SAAS,EDEgB,KAAK;ECD9B,gBAAgB,EDCgB,IAAI;CAErC",
+    "sources": [
+        "../scss/test.scss",
+        "../scss/_mixins.scss",
+        "../scss/partial/_styles.scss"
+    ],
+    "names": [],
+    "file": "test.css"
+}
