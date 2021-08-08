@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  padding: 3rem;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(-8rem);
+            transform: translateX(-8rem);
+  }
+  80% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(-8rem);
+            transform: translateX(-8rem);
+  }
+  80% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+header {
+  width: 100%;
+  height: 90vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#285a91), to(#1f9cfd)), url(../images/header-image.jpg);
+  background-image: linear-gradient(to right, #285a91 0%, #1f9cfd 100%), url(../images/header-image.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  position: relative;
+}
+
+header #logo-text {
+  position: absolute;
+  left: 7rem;
+  top: 4rem;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: -0.5rem;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+header #header-text {
+  position: absolute;
+  left: 7rem;
+  bottom: 23%;
+  color: #fff;
+  letter-spacing: -0.1rem;
+  font-weight: 700;
+}
+
+header #header-text-main {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+header #header-text-sub {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+footer {
+  color: #b9b9b9;
+  background-color: #3f4a56;
+  padding: 9rem 7rem 3rem 7rem;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer #logo-text-footer {
+  width: 25%;
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  float: left;
+}
+
+footer #copyright {
+  width: 75%;
+  font-size: 1.2rem;
+  float: left;
+}
+
+footer #copyright p:nth-child(1) {
+  margin-bottom: 2rem;
+  word-break: break-all;
+  text-align: justify;
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-column-rule-style: dashed;
+          column-rule-style: dashed;
+  -webkit-column-rule-width: 1px;
+          column-rule-width: 1px;
+  -webkit-column-rule-color: #888;
+          column-rule-color: #888;
+  -webkit-column-width: 1rem;
+          column-width: 1rem;
+}
+/*# sourceMappingURL=index.css.map */

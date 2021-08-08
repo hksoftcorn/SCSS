@@ -1,0 +1,39 @@
+// transtion
+.btn {
+  font-size: 30px;
+  text-decoration: none;
+  opacity: 1;
+  transition: all 0.5s;
+  // transition: font-size 5s;
+
+  &:hover {
+    font-size: 50px;
+    text-decoration: underline;
+    opacity: 0.2;
+  }
+}
+
+// animation
+@keyframes anim1 {
+  // 주어진 시간에 대한 % 입니다.
+  0% {
+    opacity: 0.2;
+    transform: translate(100px, -30px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+#box1 {
+  animation-name: anim1;
+  animation-duration: 5s;
+  // 애니메이션의 마지막 모드를 남아있도록 해줍니다.
+  animation-fill-mode: forwards;
+  // delay가 지정되었을때, 마지막 모드로 시작하도록 합니다.
+  animation-fill-mode: backwards;
+  animation-delay: 3s;
+}

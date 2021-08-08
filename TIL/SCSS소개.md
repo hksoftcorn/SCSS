@@ -135,10 +135,19 @@
 ```
 
 ```scss
-$bg-color: rgb(199, 220, 228);
+// var
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #ccc;
+$color-gray-light: #efefef;
+$color-red: #f00;
+$color-blue: #00f;
+
+$border-color: $color-blue;
+$bg-color: rgba($color-black, 0.5);
 
 body {
-  background-color: #ddd;
+  background-color: $bg-color;
 }
 
 #box-1 {

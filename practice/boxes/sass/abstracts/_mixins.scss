@@ -1,0 +1,44 @@
+// mixin
+@mixin width-height-padding($width, $height, $padding) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+}
+
+@mixin pos-abs-center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  // translate 는 자기자신의 넓이를 중심으로 움직이게 됩니다.
+  transform: translate(-50%, -50%);
+}
+
+@mixin pos-abs-center-horizontal() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin pos-abs-center-vertical() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin mq($screen-width) {
+  @if $screen-width == "phone" {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  } @else if $screen-width == "tablet" {
+    @media screen and (min-width: 601px) and (max-width: 900px) {
+      @content;
+    }
+  } @else if $screen-width == "desktop-big" {
+    @media screen and (min-width: 1201px) {
+      @content;
+    }
+  } @else {
+    // desktop
+  }
+}

@@ -1,0 +1,50 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/base";
+
+.box {
+  @include width-height-padding(300px, 300px, 20px);
+  @include pos-abs-center();
+
+  &,
+  &-inner {
+    border: 3px solid $border-color;
+  }
+
+  @include mq("phone") {
+    width: 100%;
+    border: none;
+  }
+  @include mq("tablet") {
+    border: 2px solid $border-color;
+  }
+  @include mq("desktop-big") {
+    border: 10px solid $border-color;
+  }
+
+  &-inner {
+    @include width-height-padding(initial, 40px, 10px);
+    background-color: $color-gray;
+
+    @include mq("desktop-big") {
+      width: 300px;
+      height: 70px;
+    }
+
+    &-title {
+      font-size: 40px;
+      color: $color-white;
+      background-color: rgba($color-black, 0.5);
+
+      @include mq("phone") {
+        font-size: 20px;
+      }
+      @include mq("tablet") {
+        font-size: 30px;
+      }
+      @include mq("desktop-big") {
+        font-size: 50px;
+      }
+    }
+  }
+}
